@@ -1,8 +1,8 @@
-@use './base/resets';
-/* Importar el parcial _resets.scss (no recomdanle poner el _ ni la extensión) */
-
+@use './base/resets'; /* Importar el parcial _resets.scss (no poner el _ ni la extensión (.scss)) */
 @use './base/typografhy';
-/* Importar el parcial de _typografhy.scss */
+@use './layout/header';
+@use './pages/inicio';
+@use './components/cards';
 
 
 /* ESTRUCTURA 7 EN 1
