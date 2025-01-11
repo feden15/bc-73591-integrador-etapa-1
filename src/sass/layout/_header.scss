@@ -46,39 +46,59 @@
 
 .search-bar {
     display: flex;
-    background-color: olivedrab;
-    justify-content: space-around;
-
+    background-color: #fefefe;
+    justify-content: space-evenly;
+    height: 70px;
+    
     &__logo-container { /* .search-bar__logo-container */
-        width: 18.75rem;
-        height: 3.75rem;
+        width: 10rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
+    &__logo-container img {
+        max-width: 10rem;
+    }
+    
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
-
-        background-color: gold;
+        
+        background-color: #fefefe;
         display: flex;
         flex-basis: 100%;
-        justify-content: center;
+        padding: 5px;
+        gap: 2px;
     }
 
     &__form-label {
+        width: 0;
+        visibility: hidden;
         color: rgb(192, 125, 183);
     }
     
     &__form-search {
-        background-color: deeppink;
+        border-radius: 5px;
+        width: 90%;
+        background-color: #fefefe;
     }
-
+    
     &__form-submit {
-        background-color: darkslategray;
+        border-radius: 5px;
+        background-color: #fefefe;
     }
-
+    
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        align-self: center;
+        border-radius: 5px;
         flex: 0 0 3rem; /* shorthand (grow-shrink-basis) */
-        background-color: goldenrod;
+        background-color: #fefefe;
+    }
+
+    &__carrito-container img {
+        width: 100%;
     }
 }
 
@@ -96,7 +116,7 @@
 
     &__label { /* .menu-toogle__label */
         display: block;
-        background-color: black;
+        background-color: #fefefe;
         height: 100%;
     }
 
